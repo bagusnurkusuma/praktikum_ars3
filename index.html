@@ -7,30 +7,22 @@
     <!-- Load A-Frame and AR.js -->
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ar.js/2.2.2/aframe-ar.min.js"></script>
-
-    <style>
-      body { margin: 0; overflow: hidden; }
-      a-scene { width: 100vw; height: 100vh; }
-    </style>
   </head>
   <body>
     <a-scene embedded arjs="sourceType: webcam;">
       <a-marker preset="hiro">
-        <!-- Box -->
-        <a-box position="-1 0.5 0" material="color: blue;"></a-box>
+        <!-- Box merah-->
+        <a-box position="-1 0.5 0" material="color: red;"></a-box>
 
-        <!-- Sphere -->
-        <a-sphere position="0 0.5 0" radius="0.5" material="color: red;"></a-sphere>
+        <!-- Sphere hijau-->
+        <a-sphere position="0 0.5 0" radius="0.5" material="color: green;"></a-sphere>
 
-        <!-- Cylinder -->
-        <a-cylinder position="1 0.5 0" radius="0.3" height="1" material="color: green;"></a-cylinder>
+        <!-- Cylinder biru -->
+        <a-cylinder position="1 0.5 0" radius="0.3" height="1" material="color: blue;"></a-cylinder>
 
-        <!-- Plane -->
+        <!-- Plane kuning -->
         <a-plane position="2 0 0" rotation="-90 0 0" width="1" height="1" material="color: yellow;"></a-plane>
       </a-marker>
-
-      <!-- Lighting (optional for better visibility) -->
-      <a-entity light="type: directional; color: white; intensity: 1" position="0 4 1"></a-entity>
 
       <a-entity camera></a-entity>
     </a-scene>
